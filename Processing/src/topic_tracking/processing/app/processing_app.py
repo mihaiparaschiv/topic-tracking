@@ -39,7 +39,7 @@ if __name__ == '__main__':
     while True:
         try:
             # input
-            input_message = mq_client.getMessage(input_queue)
+            input_message = mq_client.get_message(input_queue)
             discovered_resource = mq_codec.decode(input_message.body, DiscoveredResource)
             logger.info('Dequeued discovered resource: %s ' % discovered_resource)
 
@@ -48,13 +48,13 @@ if __name__ == '__main__':
                 resource = p_client.process(discovered_resource)
                 # output
                 msg_body = mq_codec.encode(resource)
-                mq_client.putMessage(output_queue, msg_body)
+                mq_client.put_message(output_queue, msg_body)
                 logger.info('Enqueued processed resource: %s ' % resource)
             except ProcessingException, e:
                 logger.error(e)
 
             # delete the input message
-            mq_client.deleteMessage(input_queue, input_message.id)
+            mq_client.delete_message(input_queue, input_message.id)
         except EmptyQueueException:
             logger.info('Empty queue. Sleeping...')
             time.sleep(EMPTY_QUEUE_TIMEOUT)

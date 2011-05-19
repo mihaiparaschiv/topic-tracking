@@ -87,7 +87,7 @@ class WebPageLoader(Thread):
                 self._logger.warning('Skipped %s: Content length is %s.' %
                     (resource, len(resource.content)))
             msg_body = mq_codec.encode(resource)
-            mq_client.putMessage(queue, msg_body)
+            mq_client.put_message(queue, msg_body)
             self._logger.debug("Enqueued: %s" % resource._id)
         except DuplicateKeyError:
             pass

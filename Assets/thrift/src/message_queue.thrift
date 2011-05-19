@@ -11,8 +11,8 @@ exception EmptyQueueException {
 }
 
 service MessageQueueService {
-    void clearQueue(1: string queue),
-    string putMessage(1: string queue, 2: string body),
-    Message getMessage(1: string queue) throws (1: EmptyQueueException empty),
-    void deleteMessage(1: string queue, 2: string id)
+    void clear_queue(1: string queue),
+    string put_message(1: string queue, 2: string body),
+    Message get_message(1: string queue) throws (1: EmptyQueueException empty),
+    void delete_message(1: string queue, 2: string id)
 }

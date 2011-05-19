@@ -46,9 +46,9 @@ if __name__ == '__main__':
 
     # dequeue one resource
     mq_client.connect()
-    message = mq_client.getMessage(processed_resource_queue)
+    message = mq_client.get_message(processed_resource_queue)
     resource = mq_codec.decode(message.body, Resource)
-    mq_client.deleteMessage(processed_resource_queue, message.id)
+    mq_client.delete_message(processed_resource_queue, message.id)
     mq_client.disconnect()
 
     # save the resource to mongo

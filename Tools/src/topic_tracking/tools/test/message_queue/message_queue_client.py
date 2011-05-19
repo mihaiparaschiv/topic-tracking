@@ -11,10 +11,10 @@ transport.open()
 
 queue = 'base'
 data = 'cool'
-client.putMessage(queue, data)
+client.put_message(queue, data)
 
 while True:
-    message = client.getMessage(queue)
+    message = client.get_message(queue)
     print(message)
 
 transport.close()

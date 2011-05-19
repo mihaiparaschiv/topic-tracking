@@ -37,7 +37,7 @@ class ProcessedResourceHandler(object):
         while True:
             try:
                 # dequeue a processed resource
-                message = self._mq_client.getMessage(self._processed_resource_queue)
+                message = self._mq_client.get_message(self._processed_resource_queue)
                 resource = self._mq_codec.decode(message.body, Resource)
             except EmptyQueueException:
                 self._logger.info('Empty queue. Sleeping...')
@@ -67,4 +67,4 @@ class ProcessedResourceHandler(object):
                 self._logger.warning('Resource %s: Already inserted.' % resource._id)
 
             # delete the queue message
-            self._mq_client.deleteMessage(self._processed_resource_queue, message.id)
+            self._mq_client.delete_message(self._processed_resource_queue, message.id)

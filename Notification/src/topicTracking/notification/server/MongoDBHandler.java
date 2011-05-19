@@ -82,7 +82,7 @@ public class MongoDBHandler implements NotificationService.Iface {
 	private void sendToQueue(String queue, DBObject notification) {
 		String body = JSON.serialize(notification);
 		try {
-			mq_client.putMessage(queue, body);
+			mq_client.put_message(queue, body);
 		} catch (TException e) {
 			e.printStackTrace();
 		}

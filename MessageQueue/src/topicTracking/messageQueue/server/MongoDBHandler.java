@@ -32,12 +32,12 @@ public class MongoDBHandler implements MessageQueueService.Iface {
 	}
 
 	@Override
-	public void clearQueue(String queue) throws TException {
+	public void clear_queue(String queue) throws TException {
 		db.getCollection(queue).drop();
 	}
 
 	@Override
-	public String putMessage(String queue, String body) throws TException {
+	public String put_message(String queue, String body) throws TException {
 		DBCollection collection = prepareCollection(queue);
 		long currentTime = System.currentTimeMillis();
 
@@ -52,7 +52,7 @@ public class MongoDBHandler implements MessageQueueService.Iface {
 	}
 
 	@Override
-	public Message getMessage(String queue) throws EmptyQueueException,
+	public Message get_message(String queue) throws EmptyQueueException,
 			TException {
 		DBCollection collection = prepareCollection(queue);
 		long currentTime = System.currentTimeMillis();
@@ -82,7 +82,7 @@ public class MongoDBHandler implements MessageQueueService.Iface {
 	}
 
 	@Override
-	public void deleteMessage(String queue, String id) throws TException {
+	public void delete_message(String queue, String id) throws TException {
 		DBCollection collection = db.getCollection(queue);
 
 		DBObject item = new BasicDBObject();

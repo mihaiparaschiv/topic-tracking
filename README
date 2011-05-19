@@ -1,17 +1,18 @@
 Eclipse workspace variables:
-es_home - elasticsearch home
-thrift_exe - path to thrift generator
-topic_tracking_root - path to the local repository
+-   es_home - elasticsearch home
+-   thrift_exe - path to thrift generator
+-   topic_tracking_root - path to the local repository
 
 
 Building process:
-1   cleanup.py
 1   thrift_generate.bat
 2   thrift_copy.bat
 
 Cleanup:
-*   cleanup.bat
-*   elasticsearch_reset.bat
+1   clean all Eclipse projects in order to build the .jar files
+2   Tools - build_config.py
+3   cleanup.bat
+4   elasticsearch_reset.bat
 
 Running:
 1   Start MongoDB

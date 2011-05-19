@@ -13,3 +13,9 @@ Running:
 2   services_start.bat
 3   web_server_start.bat
 3   apps_start.bat
+
+Resource enqueuing process:
+
+1   Discovery - feed_reading_app.py
+2   Discovery - resource_building_app.py
+3   Discovery - resource_enqueueing_app.py

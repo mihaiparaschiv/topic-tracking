@@ -1,5 +1,0 @@
-Resource enqueuing process:
-
-1   Discovery - discovery - feed_reading_app.py
-2   Discovery - discovery - resource_building_app.py
-3   Discovery - discovery - resource_enqueueing_app.py

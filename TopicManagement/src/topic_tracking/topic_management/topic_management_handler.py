@@ -22,13 +22,13 @@ class TopicManagementHandler(TopicManagementService.Iface):
         self._index = index
         self._query_builder = query_builder
 
-    def createFromFeatures(self, features):
+    def create_from_features(self, features):
         pass
 
-    def createFromStory(self, id):
+    def create_from_story(self, id):
         raise NotFoundException('Story not found.')
 
-    def getSummary(self, id, startTime, endTime):
+    def get_summary(self, id, startTime, endTime):
         pass
 
     def _create_from_features(self, title, terms, entities):

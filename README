@@ -1,3 +1,9 @@
+Eclipse workspace variables:
+es_home - elasticsearch home
+thrift_exe - path to thrift generator
+topic_tracking_root - path to the local repository
+
+
 Building process:
 1   cleanup.py
 1   thrift_generate.bat

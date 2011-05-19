@@ -11,6 +11,6 @@ exception ProcessingException {
 
 
 service ProcessingService {
-    types.Resource process(1:types.DiscoveredResource discoveredResource)
-        throws (1: ProcessingException processingException),
+    types.Resource process(1:types.DiscoveredResource discovered_resource)
+        throws (1: ProcessingException processing),
 }

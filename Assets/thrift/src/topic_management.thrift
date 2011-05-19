@@ -24,7 +24,7 @@ service TopicManagementService {
      * 
      * @return the new topic's id
      */
-    types.ModelId create_from_story(1:types.ModelId id) throws (1: exceptions.NotFoundException notFound)
+    types.ModelId create_from_story(1:types.ModelId id) throws (1: exceptions.NotFoundException not_found)
     
     /**
      * Creates a topic from a story.
@@ -33,5 +33,5 @@ service TopicManagementService {
      * 
      * @return JSON representation of the summary
      */
-    string get_summary(1: types.ModelId id, 2: types.Timestamp startTime, 3: types.Timestamp endTime)
+    string get_summary(1: types.ModelId id, 2: types.Timestamp start_time, 3: types.Timestamp end_time)
 }

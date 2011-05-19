@@ -14,7 +14,7 @@ struct Notification {
 
 service NotificationService {
     void subscribe(1: string topic, 2: string protocol, 3: string endpoint)
-         throws (1: exceptions.InvalidArgumentException invalidArgument),
+         throws (1: exceptions.InvalidArgumentException invalid_argument),
     void unsubscribe(1: string topic, 2: string protocol, 3: string endpoint),
     void publish(1: string topic, 2: string body)
 }

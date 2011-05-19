@@ -6,5 +6,5 @@ include "exceptions.thrift"
 
 
 service StoryUpdatingService {
-    void update(1:string id) throws (1: exceptions.NotFoundException notFound)
+    void update(1:string id) throws (1: exceptions.NotFoundException not_found)
 }

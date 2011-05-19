@@ -1,0 +1,10 @@
+mongo:
+    databases:
+        message_queue: message_queue
+
+message_queue:
+    client:
+        transport: socket
+        protocol: binary
+        host: localhost
+        port: 9091

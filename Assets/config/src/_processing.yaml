@@ -1,0 +1,8 @@
+processing:
+    commands:
+        text_extraction:
+            min_content_length: 100
+        term_extraction:
+            min_term_count: 3
+        entity_extraction:
+            min_entity_count: 1

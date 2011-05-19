@@ -1,0 +1,6 @@
+_include:
+    - evaluation/main
+
+app:
+    output:
+        folder: output/results/resource_properties

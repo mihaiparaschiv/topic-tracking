@@ -1,0 +1,10 @@
+_include:
+    - evaluation/main
+
+app:
+    index: evaluation_similarity_asymmetry
+    resource_count:
+        indexed: 2000
+        compared: 100
+    output:
+        folder: output/results/similarity_asymetry

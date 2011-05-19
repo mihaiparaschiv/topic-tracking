@@ -1,0 +1,72 @@
+mappings:
+    topic_tracking_main:
+        resource:
+            properties:
+                title:
+                    type: string
+                content:
+                    type: string
+                entities:
+                    type: string
+                    analyzer: payload
+                terms:
+                    type: string
+                    analyzer: payload
+        story:
+            properties:
+                title:
+                    type: string
+                entities:
+                    type: string
+                    analyzer: payload
+                terms:
+                    type: string
+                    analyzer: payload
+                score:
+                    type: float
+                created:
+                    type: long
+                updated:
+                    type: long
+    topic_tracking_open:
+        resource:
+            properties:
+                title:
+                    type: string
+                content:
+                    type: string
+                entities:
+                    type: string
+                    analyzer: payload
+                terms:
+                    type: string
+                    analyzer: payload
+        story:
+            properties:
+                title:
+                    type: string
+                entities:
+                    type: string
+                    analyzer: payload
+                terms:
+                    type: string
+                    analyzer: payload
+                score:
+                    type: float
+                created:
+                    type: long
+                updated:
+                    type: long
+    evaluation_similarity_asymmetry:
+        resource:
+            properties:
+                title:
+                    type: string
+                content:
+                    type: string
+                entities:
+                    type: string
+                    analyzer: payload
+                terms:
+                    type: string
+                    analyzer: payload

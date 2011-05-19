@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% load mongo_util %}
+
+{% block title %}Topics{% endblock %}
+
+{% block content %}
+<div class="topic-list">
+    {% for topic in topics %}
+       <div class="story">
+            <p class="title">
+                <a href="{% url topic_tracking_web.demo.views.topics_show id=topic|mongoid %}">
+                    {{ topic.title }}
+                </a>
+            </p>
+        </div>
+    {% empty %}
+        <p>No topics found.</p>
+    {% endfor %}
+</div>
+{% endblock %}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/JavaCommons"/>
+	<classpathentry kind="lib" path="/JavaCommons/lib/nekohtml-1.9.13.jar"/>
+	<classpathentry kind="lib" path="/JavaCommons/lib/xerces-2.9.1.jar"/>
+	<classpathentry kind="lib" path="/JavaCommons/lib/boilerpipe-1.1.0.jar"/>
+	<classpathentry kind="lib" path="/JavaCommons/lib/libthrift-0.6.1.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="create_jar" name="Create Jar for Project Search">
+    <target name="create_jar">
+        <jar destfile="Search/build/search.jar">
+            <manifest>
+                <attribute name="Class-Path" value="."/>
+                <attribute name="Rsrc-Class-Path" value="./ elasticsearch-0.16.0.jar lucene-analyzers-3.1.0.jar lucene-core-3.1.0.jar"/>
+            </manifest>
+            <fileset dir="Search/bin"/>
+            <fileset dir="JavaCommons/bin"/>
+            <zipfileset dir="external/java/lib/" includes="elasticsearch-0.16.0.jar"/>
+            <zipfileset dir="external/java/lib/" includes="lucene-analyzers-3.1.0.jar"/>
+            <zipfileset dir="external/java/lib/" includes="lucene-core-3.1.0.jar"/>
+        </jar>
+    </target>
+</project>

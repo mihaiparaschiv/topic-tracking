@@ -1,0 +1,13 @@
+_include:
+    - main
+
+logging:
+    loggers:
+        evaluation:
+            level: DEBUG
+            handlers: [console]
+            propagate: no
+
+mongo:
+    databases:
+        evaluation_output: evaluation_output

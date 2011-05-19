@@ -1,0 +1,11 @@
+_include:
+    - evaluation/main
+
+app:
+    index: evaluation_similarity_asymmetry
+    centroid:
+        selected:
+            min_resources: 2
+    output:
+        folder: output/results/story_properties
+    story_count: 0

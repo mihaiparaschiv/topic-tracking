@@ -1,0 +1,5 @@
+url:
+    max_redirections: 30
+
+socket:
+    timeout: 10

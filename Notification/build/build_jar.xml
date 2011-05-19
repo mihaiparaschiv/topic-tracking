@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="create_run_jar" name="Create Runnable Jar for Project Notification with Jar-in-Jar Loader">
+    <target name="create_run_jar">
+        <jar destfile="Notification/build/notification_server.jar">
+            <manifest>
+                <attribute name="Main-Class" value="org.eclipse.jdt.internal.jarinjarloader.JarRsrcLoader"/>
+                <attribute name="Rsrc-Main-Class" value="topicTracking.notification.server.Server"/>
+                <attribute name="Class-Path" value="."/>
+                <attribute name="Rsrc-Class-Path" value="./ slf4j-api-1.5.8.jar slf4j-simple-1.5.8.jar libthrift-0.6.1.jar gson-1.6.jar mongo-2.5.3.jar"/>
+            </manifest>
+            <zipfileset src="Notification/build/jar-in-jar-loader.zip"/>
+            <fileset dir="Notification/bin"/>
+            <fileset dir="JavaCommons/bin"/>
+            <zipfileset dir="external/java/lib/" includes="slf4j-api-1.5.8.jar"/>
+            <zipfileset dir="external/java/lib/" includes="slf4j-simple-1.5.8.jar"/>
+            <zipfileset dir="external/java/lib/" includes="libthrift-0.6.1.jar"/>
+            <zipfileset dir="external/java/lib/" includes="gson-1.6.jar"/>
+            <zipfileset dir="external/java/lib/" includes="mongo-2.5.3.jar"/>
+        </jar>
+    </target>
+</project>

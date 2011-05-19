@@ -1,0 +1,21 @@
+index:
+    similarity:
+        index:
+            type: topicTracking.search.index.similarity.PayloadSimilarityProvider
+        search:
+            type: topicTracking.search.index.similarity.PayloadSimilarityProvider
+    queryparser:
+        query:
+            payload:
+                type: topicTracking.search.index.query.PayloadQueryParser
+    analysis:
+        analyzer: 
+            payload:
+                type: custom
+                tokenizer: whitespace
+                filter: [payload]
+        filter:
+            payload:
+                type:  topicTracking.search.index.analysis.PayloadTokenFilterFactory
+    mapper:
+        dynamic: false

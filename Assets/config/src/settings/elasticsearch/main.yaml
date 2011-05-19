@@ -1,0 +1,2 @@
+_include:
+    - settings/elasticsearch/_mappings

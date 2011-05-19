@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+		<meta http-equiv="Content-Language" content="en-us" />
+        <link rel="stylesheet" type="text/css" href="{{ MEDIA_URL }}/yui/cssreset/reset-min.css" />
+        <link rel="stylesheet" type="text/css" href="{{ MEDIA_URL }}/yui/cssbase/base-min.css" />
+        <link rel="stylesheet" type="text/css" href="{{ MEDIA_URL }}/yui/cssfonts/fonts-min.css" />
+        <link rel="stylesheet" type="text/css" href="{{ MEDIA_URL }}/yui/cssgrids/grids-min.css" />
+		<link rel="stylesheet" type="text/css" href="{{ MEDIA_URL }}/css/base.css" />
+        <title>Demo</title>
+	</head>
+    <body>
+        <div id="navigation">
+            <span class="link">
+                <a href="{% url topic_tracking_web.demo.views.stories_list %}">Stories</a>
+            </span>
+            <span class="link">
+                <a href="{% url topic_tracking_web.demo.views.topics_list %}">Topics</a>
+            </span>
+        </div>
+        <h1 id="title">{% block title %}{% endblock %}</h1>
+        <div id="content">
+            {% block content %}{% endblock %}
+        </div>
+        <div id="bookmarklet">
+            <a title="Follow topic" id="follow-bookmarklet" href="{% include "_snippets/_bookmarklet.tpl" %}" onclick="return false">
+                Follow topic
+            </a>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,22 @@
+_include:
+    - _alchemyapi
+    - _cache
+    - _elasticsearch
+    - _logging
+    - _mongo
+    - _network
+    - _model_management
+    - _processing
+    - service/message_queue
+    - service/processing
+    - service/text_extraction
+    - service/story_updating
+    - service/topic_management
+    
+    
+logging:
+    loggers:
+        web:
+            level: DEBUG
+            handlers: [console]
+            propagate: no

@@ -1,0 +1,16 @@
+_include:
+    - _logging_file_handler
+
+logging:
+    loggers:
+        evaluation.discovery.WebPageSynchronizer:
+            level: INFO
+            handlers: [console, file]
+            propagate: no
+        evaluation.discovery.WebPageLoader:
+            level: INFO
+            handlers: [console, file]
+            propagate: no
+discovery:
+    resource_enqueueing:
+        max_content_length: 1048576

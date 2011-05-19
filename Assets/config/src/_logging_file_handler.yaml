@@ -1,0 +1,6 @@
+logging:
+    handlers:
+        file:
+            class: logging.FileHandler
+            level: WARNING
+            formatter: simple

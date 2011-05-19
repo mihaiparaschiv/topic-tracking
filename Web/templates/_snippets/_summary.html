@@ -1,0 +1,28 @@
+{% load general_util %}
+{% load mongo_util %}
+
+<div class="story-summary showable-container">
+    <div class="header">
+        <div class="title">
+            <a href="{% url topic_tracking_web.demo.views.stories_show id=story|mongoid %}">
+                {{ story.title }}
+            </a>
+        </div>
+        <div class="time showable">{{ story.created|fromtimestamp|date }}</div>
+    </div>
+    <div class="resources">
+        {% for resource in resources %}
+            <div class="resource yui3-g">
+                <div class="yui3-u-1-24">
+                    <img src="{{ MEDIA_URL }}/images/article.png" alt="article" />
+                </div>
+                <div class="yui3-u-23-24">
+                    <span class="title">
+                        <a href="{{ resource.uri }}">{{ resource.title }}</a>
+                    </span>
+                    <span class="snippet">{{ resource.content|truncatewords:50 }}</span>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>

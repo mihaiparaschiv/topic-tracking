@@ -1,0 +1,162 @@
+1
+# bbc.com
+"http://feeds.bbci.co.uk/news/rss.xml"
+"http://feeds.bbci.co.uk/news/world/rss.xml"
+"http://feeds.bbci.co.uk/news/uk/rss.xml"
+"http://feeds.bbci.co.uk/news/business/rss.xml"
+"http://feeds.bbci.co.uk/news/politics/rss.xml"
+"http://feeds.bbci.co.uk/news/health/rss.xml"
+"http://feeds.bbci.co.uk/news/education/rss.xml"
+"http://feeds.bbci.co.uk/news/science_and_environment/rss.xml"
+"http://feeds.bbci.co.uk/news/technology/rss.xml"
+2
+# www.guardian.co.uk
+"http://feeds.guardian.co.uk/theguardian/world/rss"
+"http://feeds.guardian.co.uk/theguardian/uk/rss"
+"http://feeds.guardian.co.uk/theguardian/world/rss"
+"http://www.guardian.co.uk/global-development/rss"
+"http://www.guardian.co.uk/science/rss"
+"http://feeds.guardian.co.uk/theguardian/technology/rss"
+"http://www.guardian.co.uk/business/economics"
+3
+# USA Today - World   
+http://rssfeeds.usatoday.com/UsatodaycomWorld-TopStories
+4
+# www.washingtonpost.com
+"http://feeds.washingtonpost.com/rss/world/europe"
+"http://feeds.washingtonpost.com/rss/world/middle-east"
+"http://feeds.washingtonpost.com/rss/business/economy"
+"http://feeds.washingtonpost.com/rss/local"
+"http://feeds.washingtonpost.com/rss/local/education"
+5
+# www.newyorker.com
+'http://www.newyorker.com/services/rss/feeds/everything.xml'
+6
+# www.reuters.com
+'http://feeds.reuters.com/reuters/artNews'
+'http://feeds.reuters.com/reuters/companyNews'
+'http://feeds.reuters.com/reuters/entertainment'
+'http://feeds.reuters.com/reuters/environment'
+'http://feeds.reuters.com/reuters/healthNews'
+'http://feeds.reuters.com/reuters/worldNews'
+'http://feeds.reuters.com/Reuters/InternetNews'
+'http://feeds.reuters.com/reuters/mediaNews'
+'http://feeds.reuters.com/reuters/MostRead'
+'http://feeds.reuters.com/Reuters/PoliticsNews'
+'http://feeds.reuters.com/reuters/technologyNews'
+'http://feeds.reuters.com/reuters/topNews'
+'http://feeds.reuters.com/Reuters/domesticNews'
+'http://feeds.reuters.com/reuters/scienceNews'
+7
+# abc news
+'http://feeds.abcnews.com/abcnews/topstories'
+'http://feeds.abcnews.com/abcnews/internationalheadlines'
+'http://feeds.abcnews.com/abcnews/usheadlines'
+'http://feeds.abcnews.com/abcnews/blotterheadlines'
+'http://feeds.abcnews.com/abcnews/technologyheadlines'
+'http://feeds.abcnews.com/abcnews/entertainmentheadlines'
+'http://feeds.abcnews.com/abcnews/thisweekheadlines'
+8
+# fox news
+'http://feeds.foxnews.com/foxnews/latest'
+'http://feeds.foxnews.com/foxnews/national'
+'http://feeds.foxnews.com/foxnews/world'
+'http://feeds.foxnews.com/foxnews/politics'
+'http://feeds.foxnews.com/foxnews/business'
+'http://feeds.foxnews.com/foxnews/scitech'
+'http://feeds.foxnews.com/foxnews/health'
+'http://feeds.foxnews.com/foxnews/entertainment'
+9
+# cbs news
+"http://www.cbsnews.com/rss/couric__co.rss"
+"http://www.cbsnews.com/rss/tech_talk.rss"
+"http://www.cbsnews.com/rss/horserace.rss"
+"http://www.cbsnews.com/rss/primary_source.rss"
+"http://www.cbsnews.com/rss/investigative_round-up.rss"
+"http://www.cbsnews.com/rss/internet_terror_monitor.rss"
+10
+# chicago tribune
+"http://feeds.chicagotribune.com/chicagotribune/news/"
+"http://feeds.chicagotribune.com/ChicagoBreakingNews?format=xml"
+"http://feeds.chicagotribune.com/chicagotribune/news/local/"
+"http://feeds.chicagotribune.com/chicagotribune/news/nationworld/"
+"http://feeds.chicagotribune.com/chicagotribune/obits/"
+"http://feeds.chicagotribune.com/chicagotribune/opinion/"
+"http://feeds.chicagotribune.com/chicagotribune/chapman/"
+"http://feeds.chicagotribune.com/chicagotribune/kass/"
+"http://feeds.chicagotribune.com/chicagotribune/page/"
+"http://feeds.chicagotribune.com/chicagotribune/parker/"
+"http://feeds.chicagotribune.com/chicagotribune/trice/"
+"http://feeds.chicagotribune.com/chicagotribune/changeofsubject/"
+"http://feeds.chicagotribune.com/chicagotribune/business/"
+"http://feeds.chicagotribune.com/chicagotribune/realestate/"
+"http://feeds.chicagotribune.com/chicagotribune/apartments/"
+"http://feeds.chicagotribune.com/chicagotribune/newhomes/"
+"http://feeds.chicagotribune.com/chicagotribune/foreclosure/"
+"http://feeds.chicagotribune.com/chicagohomes/localscene/"
+"http://feeds.chicagotribune.com/chicagotribune/problem/"
+
+11
+# huffington post
+"http://feeds.huffingtonpost.com/huffingtonpost/raw_feed"
+"http://feeds.huffingtonpost.com/huffingtonpost/LatestNews"
+"http://feeds.huffingtonpost.com/huffingtonpost/TheBlog"
+"http://feeds.huffingtonpost.com/FeaturedPosts"
+"http://feeds.huffingtonpost.com/huffingtonpost/raw_feed"
+"http://feeds.huffingtonpost.com/huffingtonpost/LatestNews"
+"http://feeds.huffingtonpost.com/huffingtonpost/TheBlog"
+"http://feeds.huffingtonpost.com/FeaturedPosts"
+"http://feeds.huffingtonpost.com/HP/MostPopular"
+"http://feeds.huffingtonpost.com/HP/politics"
+12
+# voanews
+'http://www.voanews.com/templates/Articles.rss?sectionPath=/english/news'
+'http://www.voanews.com/templates/Articles.rss?sectionPath=/english/news/usa'
+'http://www.voanews.com/templates/Articles.rss?sectionPath=/english/news/africa'
+'http://www.voanews.com/templates/Articles.rss?sectionPath=/english/news/americas'
+'http://www.voanews.com/templates/Articles.rss?sectionPath=/english/news/asia'
+'http://www.voanews.com/templates/Articles.rss?sectionPath=/english/news/europe'
+'http://www.voanews.com/templates/Articles.rss?sectionPath=/english/news/middle-east'
+13
+# http://www.sacbee.com/
+'http://www.sacbee.com/business/index.rss'
+'http://www.sacbee.com/local/index.rss'
+'http://www.sacbee.com/830/index.rss'
+'http://www.sacbee.com/102/index.rss'
+14
+# cnn.com
+'http://rss.cnn.com/rss/edition.rss'                       
+'http://rss.cnn.com/rss/edition_world.rss'                 
+'http://rss.cnn.com/rss/edition_africa.rss'                
+'http://rss.cnn.com/rss/edition_americas.rss'              
+'http://rss.cnn.com/rss/edition_asia.rss'                  
+'http://rss.cnn.com/rss/edition_europe.rss'                
+'http://rss.cnn.com/rss/edition_meast.rss'                 
+'http://rss.cnn.com/rss/edition_us.rss'                    
+'http://rss.cnn.com/rss/edition_business.rss'              
+'http://rss.cnn.com/rss/edition_technology.rss'            
+'http://rss.cnn.com/rss/edition_space.rss'                 
+'http://rss.cnn.com/rss/edition_entertainment.rss'                 
+'http://rss.cnn.com/rss/cnn_latest.rss'                    
+'http://rss.cnn.com/rss/edition_business360.rss'           
+'http://rss.cnn.com/rss/edition_connecttheworld.rss'       
+'http://rss.cnn.com/rss/edition_inthefield.rss'            
+'http://rss.cnn.com/rss/edition_ime.rss'                   
+'http://rss.cnn.com/rss/edition_idesk.rss'                 
+'http://rss.cnn.com/rss/edition_prismblog.rss'             
+'http://rss.cnn.com/rss/edition_questmeansbusiness.rss'    
+'http://rss.cnn.com/rss/edition_screeningroom.rss'         
+'http://rss.cnn.com/rss/edition_worldsportblog.rss'        
+'http://rss.cnn.com/rss/edition_ukelectionblog.rss'
+15
+# MSNBC - News    
+http://www.msn.com/rss/news.aspx
+16
+# Fox News - Latest   
+http://feeds.feedburner.com/foxnews/latest
+17
+# Washington Post - World 
+http://feeds.washingtonpost.com/wp-dyn/rss/world/index_xml
+18
+# Time - World    
+http://feeds2.feedburner.com/time/world

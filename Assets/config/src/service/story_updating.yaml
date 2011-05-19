@@ -1,0 +1,8 @@
+story_updating:
+    server:
+        port: 9093
+    client:
+        transport: socket
+        protocol: binary
+        host: localhost
+        port: 9093

@@ -1,0 +1,8 @@
+topic_management:
+    server:
+        port: 9094
+    client:
+        transport: socket
+        protocol: binary
+        host: localhost
+        port: 9094

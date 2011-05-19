@@ -1,0 +1,13 @@
+_include:
+    - evaluation/_discovery
+    - evaluation/main
+
+logging:
+    handlers:
+        file:
+            filename: output/logs/evaluation_news_brief.log
+
+mongo:
+    databases:
+        evaluation: news_brief_evaluation
+        discovery: news_brief_discovery

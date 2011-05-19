@@ -1,0 +1,29 @@
+mongo:
+    databases:
+        processed: processed
+
+elasticsearch:
+    indexes:
+        main: topic_tracking_main
+        open: topic_tracking_open
+
+model_management:
+    similarity:
+        max_clauses: 100
+        max_entity_clauses: 40
+        entity_boost: 10
+        term_boost: 1
+    story_selection:
+        min_similarity: 0.8
+    story_merging:
+        min_similarity: 0.5
+        search_delay: 1
+        resource_count_ratio: 0.1
+    story_closing:
+        search_timeout: 10
+        resource_half_life: 7200
+        min_closing_score: 2
+        min_story_life: 86400
+    topic_building:
+        min_similarity: 0.5
+        story_half_life: 864000

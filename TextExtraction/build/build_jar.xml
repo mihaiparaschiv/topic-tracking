@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="create_run_jar" name="Create Runnable Jar for Project TextExtraction with Jar-in-Jar Loader">
+    <target name="create_run_jar">
+        <jar destfile="TextExtraction/build/text_extraction_server.jar">
+            <manifest>
+                <attribute name="Main-Class" value="org.eclipse.jdt.internal.jarinjarloader.JarRsrcLoader"/>
+                <attribute name="Rsrc-Main-Class" value="topicTracking.textExtraction.server.Server"/>
+                <attribute name="Class-Path" value="."/>
+                <attribute name="Rsrc-Class-Path" value="./ slf4j-api-1.5.8.jar slf4j-simple-1.5.8.jar libthrift-0.6.1.jar boilerpipe-1.1.0.jar nekohtml-1.9.13.jar xerces-2.9.1.jar"/>
+            </manifest>
+            <zipfileset src="TextExtraction/build/jar-in-jar-loader.zip"/>
+            <fileset dir="TextExtraction/bin"/>
+            <fileset dir="JavaCommons/bin"/>
+            <zipfileset dir="external/java/lib/" includes="slf4j-api-1.5.8.jar"/>
+            <zipfileset dir="external/java/lib/" includes="slf4j-simple-1.5.8.jar"/>
+            <zipfileset dir="external/java/lib/" includes="libthrift-0.6.1.jar"/>
+            <zipfileset dir="external/java/lib/" includes="boilerpipe-1.1.0.jar"/>
+            <zipfileset dir="external/java/lib/" includes="nekohtml-1.9.13.jar"/>
+            <zipfileset dir="external/java/lib/" includes="xerces-2.9.1.jar"/>
+        </jar>
+    </target>
+</project>

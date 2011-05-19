@@ -1,0 +1,17 @@
+_include:
+    - evaluation/_discovery
+    - evaluation/main
+
+logging:
+    handlers:
+        file:
+            filename: output/logs/evaluation_feed_reading.log
+
+mongo:
+    databases:
+        evaluation: feed_reading_evaluation
+        discovery: feed_reading_discovery
+
+app:
+    feed_reading:
+        feeds_file: Assets/res/evaluation/feeds.tsv

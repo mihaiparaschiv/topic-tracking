@@ -1,0 +1,15 @@
+Building process:
+1   cleanup.py
+1   thrift_generate.bat
+2   thrift_copy.bat
+
+Cleanup:
+*   cleanup.bat
+*   elasticsearch_reset.bat
+
+Running:
+1   Start MongoDB
+1   elasticsearch_start.bat
+2   services_start.bat
+3   web_server_start.bat
+3   apps_start.bat

@@ -1,0 +1,136 @@
+body {
+	margin: auto;
+	width: 900px;
+}
+
+a {
+	color: #0000FF;;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+#navigation {
+	font-size: 1.2em;
+	padding: 1em 0 0.5em 0;
+	border-bottom: thin solid #AAAAAA;
+}
+
+#navigation .link {
+	margin-right: 1em;
+}
+
+#title {
+	font-weight: normal;
+	font-size: 2.2em;
+	margin: 0.5em 0 1em 0;
+}
+
+#title .clue {
+	color: #AAAAAA;
+}
+
+.debug {
+	opacity: 0.1;
+}
+
+.debug:hover {
+	opacity: 1;
+}
+
+.showable {
+	visibility: hidden;
+}
+
+.showable-container:hover .showable {
+	visibility: inherit;
+}
+
+
+/* Stories *******************************************************************/
+
+/* Story summaries */
+.story-summary {
+	border: thin solid #AAAAAA;
+	padding: 1em;
+}
+
+.story-summary .header {
+	font-size: 1.4em;
+	height: 2em;
+}
+
+.story-summary .header a {
+	color: #000000;
+}
+
+.story-summary .header .title {
+	float: left;
+}
+
+.story-summary .header .time {
+	color: #888888;
+	float: right;
+}
+
+.story-summary .resources .resource {
+	margin-bottom: 1em;
+}
+
+.story-summary .resources .resource .title a {
+	color: #000000;
+}
+
+.story-summary .resources .resource .snippet {
+	color: #AAAAAA;
+}
+
+/* Story list */
+#story-list .story-summary {
+	margin-bottom: 1em;
+}
+
+/* Story details */
+
+#story-details #story-tools {
+	margin-bottom: 1em;
+}
+
+#story-details #resources {
+	margin-right: 2em;
+}
+
+#story-details .resource {
+	border: thin solid #AAAAAA;
+	padding: 1em;
+	margin-bottom: 1em;
+}
+
+#story-details .resource .title a {
+	color: #000000;
+}
+
+#story-details .resource .snippet {
+	color: #AAAAAA;
+}
+
+#story-details .resource .time {
+	color: #AAAAAA;
+}
+
+
+/* Topics ********************************************************************/
+
+/* Topic summary */
+
+#topic-summary .story-summary {
+    margin-bottom: 1em;
+}
+
+#topic-summary .section .section-header {
+	margin-top: 2em;
+    margin-bottom: 1em;
+    color: #888888;
+}

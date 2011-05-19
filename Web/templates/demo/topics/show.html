@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% load general_util %}
+{% load mongo_util %}
+
+{% block title %}<span class="clue">Following</span> {{ topic.title }}{% endblock %}
+
+{% block content %}
+<div>
+    <div id="topic-summary">
+        {% for summary_name, story_resources in summaries %}
+            {% if story_resources %}
+                <div class="section">
+                    <div class="section-header">{{ summary_name }}</div>
+                    {% for story, resources in story_resources %}
+                        {% include "_snippets/_summary.html" %}
+                    {% endfor %}
+                </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

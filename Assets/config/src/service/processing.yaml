@@ -1,0 +1,8 @@
+processing:
+    server:
+        port: 9095
+    client:
+        transport: socket
+        protocol: binary
+        host: localhost
+        port: 9095

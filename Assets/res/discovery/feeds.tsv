@@ -20,7 +20,7 @@
 "http://www.guardian.co.uk/business/economics"
 3
 # USA Today - World   
-http://rssfeeds.usatoday.com/UsatodaycomWorld-TopStories
+"http://rssfeeds.usatoday.com/UsatodaycomWorld-TopStories"
 4
 # www.washingtonpost.com
 "http://feeds.washingtonpost.com/rss/world/europe"
@@ -150,13 +150,13 @@ http://rssfeeds.usatoday.com/UsatodaycomWorld-TopStories
 'http://rss.cnn.com/rss/edition_ukelectionblog.rss'
 15
 # MSNBC - News    
-http://www.msn.com/rss/news.aspx
+"http://www.msn.com/rss/news.aspx"
 16
 # Fox News - Latest   
-http://feeds.feedburner.com/foxnews/latest
+"http://feeds.feedburner.com/foxnews/latest"
 17
 # Washington Post - World 
-http://feeds.washingtonpost.com/wp-dyn/rss/world/index_xml
+"http://feeds.washingtonpost.com/wp-dyn/rss/world/index_xml"
 18
 # Time - World    
-http://feeds2.feedburner.com/time/world
+"http://feeds2.feedburner.com/time/world"
